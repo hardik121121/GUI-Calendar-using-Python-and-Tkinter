@@ -1,0 +1,49 @@
+**Introduction to GUI Calendar Application**
+
+This document introduces a simple yet functional GUI Calendar application developed using Python’s Tkinter library. The application allows users to generate and display the calendar of any desired year in a graphical user interface.
+
+### Features of the Application
+1. **User-Friendly Interface**: Built with Tkinter, the application provides an intuitive interface for users to interact with.
+2. **Dynamic Year Input**: Users can enter any year to view its complete calendar.
+3. **Elegant Design**: The interface uses visually appealing colors and fonts to enhance user experience.
+4. **Interactive Calendar Viewer**: A second window displays the full calendar for the specified year.
+
+### Key Components of the Code
+
+#### 1. **Tkinter Library**
+Tkinter is used for building the graphical interface. It manages widgets like labels, entry boxes, and buttons.
+
+#### 2. **Main Interface**
+The main interface prompts the user to enter a year. Upon submitting, it opens another window displaying the full calendar for the specified year.
+
+#### 3. **Calendar Module**
+Python’s built-in `calendar` module is utilized to generate the yearly calendar text, which is displayed in the application.
+
+### Code Walkthrough
+
+#### a. **Root Window**
+The application starts with a root window named "GUI Calendar." It contains:
+- A label with the title "Calendar."
+- A label prompting users to "Enter the year."
+- An entry box to input the year.
+- A button labeled "Show Calendar!" that triggers the `Calendar_See` function.
+
+#### b. **Calendar Viewer Window**
+When the "Show Calendar!" button is clicked:
+- A new window is created with the title "Complete year calendar."
+- The entered year is passed to the `calendar.calendar()` function, generating the full calendar as a string.
+- The calendar text is displayed using a `Label` widget.
+
+### Design Highlights
+- **Color Scheme**: The root window has a gray background, while the calendar viewer window uses a light pink background, creating a pleasant visual contrast.
+- **Font Styling**: Bold fonts with Arial typeface ensure readability.
+- **Responsive Layout**: Widgets are positioned using the grid layout manager for clarity and organization.
+
+### How to Run the Application
+1. Ensure Python is installed on your system.
+2. Save the code to a file with a `.py` extension (e.g., `gui_calendar.py`).
+3. Run the script using a Python IDE or terminal.
+4. Interact with the application by entering a year and clicking "Show Calendar!"
+
+This GUI Calendar application serves as an excellent introduction to Tkinter and demonstrates how Python can be used to create simple, interactive tools.
+
